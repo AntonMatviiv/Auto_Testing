@@ -7,7 +7,7 @@ on:
         description: 'Enter your name'
         required: true
         default: 'Executer'
-
+        
 jobs:
   greet:
     runs-on: ubuntu-latest
