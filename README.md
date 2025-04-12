@@ -15,6 +15,7 @@
     4. Виконано всі завдання з розділу "Створення декількох Workflow або завдань";
     5. Виконано всі завдання з розділу "Перевірка умов для запуску завдань або кроків";
     6. Виконано всі завдання з розділу "Баджі та статуси".
+    7. Бадж - [![First Workflow](https://github.com/AntonMatviiv/Auto_Testing/actions/workflows/workflow_one.yml/badge.svg)](https://github.com/AntonMatviiv/Auto_Testing/actions/workflows/workflow_one.yml)
 
 * Скріншоти виконаних завдань:
     ```
