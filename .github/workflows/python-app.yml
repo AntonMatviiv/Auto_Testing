@@ -39,6 +39,6 @@ jobs:
         pytest
     - name: Run Python code
       run: |
-        python ./labs/lab.py
+        python ./Test1.py
 
 
