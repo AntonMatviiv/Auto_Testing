@@ -39,5 +39,6 @@ jobs:
         pytest
     - name: Run Python code
       run: |
-        python ./LABA 3/FirstTask.py
+        python ./labs/lab.py
+
 
