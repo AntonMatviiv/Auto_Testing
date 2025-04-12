@@ -8,6 +8,17 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    
+  workflow_dispatch:
+    inputs:
+      param_name:
+        description: 'Опис параметра'
+        required: true
+        default: 'default_value'
+
+  schedule:
+    - cron: '0 14 * * 1'
+
 
 permissions:
   contents: read
