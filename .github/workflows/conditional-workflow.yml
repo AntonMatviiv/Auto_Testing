@@ -1,1 +1,26 @@
+name: Conditional Execution Example
 
+on:
+  workflow_dispatch:
+    inputs:
+      greeting_name:
+        description: 'Enter your name'
+        required: true
+        default: 'Executer'
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Умова: Виконуємо крок, якщо ім'я не "Executer"
+      - name: Send greeting
+        run: echo "Hello ${{ github.event.inputs.greeting_name }}"
+        if: github.event.inputs.greeting_name != 'Executer'
+
+      # Якщо ім'я "Executer", пропускаємо привітання
+      - name: Skip greeting if name is Executer
+        run: echo "No greeting for Executer"
+        if: github.event.inputs.greeting_name == 'Executer'
